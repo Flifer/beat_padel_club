@@ -1,9 +1,80 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Header.css';
 
+import courtScheduleImg from '../../assets/Header_assets/courtSheduleMenuIMG.jpg';
+import padelWarmupImg from '../../assets/Header_assets/padelWarmupMenuIMG.png';
+import padelRecoveryImg from '../../assets/Header_assets/padelRecoveryMenuIMG.jpg';
+import padelTrainingsImg from '../../assets/Header_assets/padelTrainingsMenuIMG.png';
+import padelKidsImg from '../../assets/Header_assets/padelKidsMenuIMG.png';
+import gymRecoveryImg from '../../assets/Header_assets/gymRecoveryMenuIMG.png';
+import trainingScheduleImg from '../../assets/Header_assets/trainingSheduleMenuIMG.jpg';
+
 const navItems = [
-  { id: 'padel', label: 'Padel', href: '#', hasChevron: true },
-  { id: 'gym', label: 'Gym', href: '#', hasChevron: true },
+  {
+    id: 'padel',
+    label: 'Padel',
+    href: '#',
+    hasChevron: true,
+    submenu: [
+      {
+        id: 'courts',
+        label: 'Courts Schedule',
+        href: '#',
+        description: 'Reserve your court',
+        image: courtScheduleImg,
+      },
+      {
+        id: 'warmup',
+        label: 'Padel Warmup',
+        href: '#',
+        description: 'Warm up with focus',
+        image: padelWarmupImg,
+      },
+      {
+        id: 'recovery',
+        label: 'Padel Recovery',
+        href: '#',
+        description: 'Recover & refresh',
+        image: padelRecoveryImg,
+      },
+      {
+        id: 'trainings',
+        label: 'Padel Trainings',
+        href: '#',
+        description: 'Train with intent',
+        image: padelTrainingsImg,
+      },
+      {
+        id: 'kids',
+        label: 'Padel Kids',
+        href: '#',
+        description: 'Play. Grow. Repeat.',
+        image: padelKidsImg,
+      },
+    ],
+  },
+  {
+    id: 'gym',
+    label: 'Gym',
+    href: '#',
+    hasChevron: true,
+    submenu: [
+      {
+        id: 'schedule',
+        label: 'Trainings Schedule',
+        href: '#',
+        description: 'Plan your next session',
+        image: trainingScheduleImg,
+      },
+      {
+        id: 'recovery',
+        label: 'Gym Recovery',
+        href: '#',
+        description: 'Recharge & restore',
+        image: gymRecoveryImg,
+      },
+    ],
+  },
   { id: 'cafe', label: 'Café', href: '#', hasChevron: false },
   { id: 'shop', label: 'Shop', href: '#', hasChevron: false },
   { id: 'membership', label: 'Membership', href: '#', hasChevron: false },
@@ -58,13 +129,49 @@ const languages = ['English', 'Українська', 'Російська'];
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [hoveredDesktopItem, setHoveredDesktopItem] = useState(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('body-locked');
+    } else {
+      document.body.classList.remove('body-locked');
+    }
+    return () => {
+      document.body.classList.remove('body-locked');
+    };
+  }, [isOpen]);
 
   const closeMenu = () => {
     setIsClosing(true);
     setTimeout(() => {
       setIsOpen(false);
       setIsClosing(false);
+      setActiveSubmenu(null);
     }, 300);
+  };
+
+  const handleNavItemEnter = (item) => {
+    if (item.hasChevron && item.submenu?.length) {
+      setHoveredDesktopItem(item);
+    } else {
+      setHoveredDesktopItem(null);
+    }
+  };
+
+  const handleDesktopNavLeave = () => {
+    setHoveredDesktopItem(null);
+  };
+
+  const handlePrimaryItemClick = (event, item) => {
+    if (item.hasChevron && item.submenu?.length) {
+      event.preventDefault();
+      setActiveSubmenu(item);
+      return;
+    }
+
+    closeMenu();
   };
 
   return (
@@ -73,18 +180,49 @@ export default function Header() {
         <div className="header-container">
           <a href="#" className="logo" aria-label="Beat Padel Club"></a>
 
-          <nav className="desktop-nav">
-            {navItems.map((item) => (
-              <a key={item.id} href={item.href}>{item.label}</a>
-            ))}
-          </nav>
+          <div className="desktop-nav-wrapper" onMouseLeave={handleDesktopNavLeave}>
+            <nav className="desktop-nav">
+              {navItems.map((item) => (
+                <a
+                  key={item.id}
+                  href={item.href}
+                  onMouseEnter={() => handleNavItemEnter(item)}
+                  onFocus={() => handleNavItemEnter(item)}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+
+            {hoveredDesktopItem?.submenu?.length ? (
+              <div
+                className="desktop-submenu-panel"
+                onMouseEnter={() => handleNavItemEnter(hoveredDesktopItem)}
+              >
+                <div className="desktop-submenu-grid">
+                  {hoveredDesktopItem.submenu.map((item) => (
+                    <a key={item.id} href={item.href} className="desktop-submenu-card">
+                      <div className="desktop-submenu-card-image" style= {{backgroundImage: `url(${item.image})`}} />
+                      <div className="desktop-submenu-card-content">
+                        <h4>{item.label}</h4>
+                        <p>{item.description}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </div>
 
           <button className="login-btn login-btn-desktop">
             Log in
           </button>
 
           <button
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              setHoveredDesktopItem(null);
+              setIsOpen(true);
+            }}
             className={isOpen ? 'hidden-mobile-menu-btn' : 'mobile-menu-btn'}
             aria-label="Открыть меню"
           >
@@ -111,21 +249,44 @@ export default function Header() {
             </div>
 
             <nav className="sidebar-menu">
-              {navItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={item.href}
-                  className="sidebar-menu-item"
-                  onClick={closeMenu}
-                >
-                  <span>{item.label}</span>
-                  {item.hasChevron && (
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M9 6l6 6-6 6" />
-                    </svg>
-                  )}
-                </a>
-              ))}
+              {activeSubmenu ? (
+                <>
+                  <button
+                    type="button"
+                    className="sidebar-back-btn"
+                    onClick={() => setActiveSubmenu(null)}
+                  >
+                    <span aria-hidden="true">←</span>
+                    <span>Back</span>
+                  </button>
+                  {activeSubmenu.submenu.map((item) => (
+                    <a
+                      key={item.id}
+                      href={item.href}
+                      className="sidebar-menu-item"
+                      onClick={closeMenu}
+                    >
+                      <span>{item.label}</span>
+                    </a>
+                  ))}
+                </>
+              ) : (
+                navItems.map((item) => (
+                  <a
+                    key={item.id}
+                    href={item.href}
+                    className="sidebar-menu-item"
+                    onClick={(event) => handlePrimaryItemClick(event, item)}
+                  >
+                    <span>{item.label}</span>
+                    {item.hasChevron && (
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M9 6l6 6-6 6" />
+                      </svg>
+                    )}
+                  </a>
+                ))
+              )}
             </nav>
 
             <div className="sidebar-footer">
