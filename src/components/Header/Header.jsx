@@ -78,7 +78,6 @@ const navItems = [
   { id: 'cafe', label: 'Café', href: '#', hasChevron: false },
   { id: 'shop', label: 'Shop', href: '#', hasChevron: false },
   { id: 'membership', label: 'Membership', href: '#', hasChevron: false },
-  { id: 'about', label: 'About', href: '#', hasChevron: false },
 ];
 
 const socialLinks = [

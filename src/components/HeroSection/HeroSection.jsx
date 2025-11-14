@@ -1,68 +1,54 @@
-import heroBanner from '../../assets/HeroSection_assets/HeroSectionBanner.png';
 import './HeroSection.css';
 
-const serviceHighlights = [
-  {
-    eyebrow: 'Padel',
-    title: 'Training Schedule',
-    description: 'Build your rhythm',
-  },
-  {
-    eyebrow: 'Wellness',
-    title: 'Gym Recovery',
-    description: 'Massage & restore',
-  },
-];
+const clubStats = [
+    {
+        id: 'openDays',
+        statNumber: '7/7',
+        statLabel: 'Open'
+    },
+    {
+        id: 'zones',
+        statNumber: '4',
+        statLabel: 'Zones'
+    },
+    {
+        id: 'classes',
+        statNumber: '150+',
+        statLabel: 'Classes monthly'
+    },
+    {
+        id: 'members',
+        statNumber: '2 000+',
+        statLabel: 'Active members'
+    },
 
-const facilityStats = [
-  { value: '7/7', label: 'Open' },
-  { value: '4', label: 'Zones' },
-  { value: '150+', label: 'Classes monthly' },
-  { value: '2 000+', label: 'Active members' },
-];
-
+]
 function HeroSection() {
-  return (
-    <section
-      className="hero"
-      style={{ '--hero-background': `url(${heroBanner})` }}
-    >
-      <div className="hero__inner">
-
-        <div className="hero__layout">
-          <div className="hero__copy">
-            <p className="hero__eyebrow">Premium club experience</p>
-            <h1 className="hero__title">
-              The Space
-              <br />
-              That Moves You
-            </h1>
-            <p className="hero__description">
-              Premium padel & gym club built for motion, balance, and flow.
-            </p>
-
-            <div className="hero__actions" role="group" aria-label="Hero actions">
-              <button type="button" className="hero__btn hero__btn--primary">
-                Join The Club
-              </button>
-              <button type="button" className="hero__btn hero__btn--ghost">
-                Book A Court
-              </button>
+    return(
+        <section className='heroSection'>
+            <div className='heroSectionContainer'>
+                <div className='clubStatsContainer'>
+                    {clubStats.map((item) => (
+                    <div className='clubStat'>
+                        <span className='clubStatNumber' key={item.id+"Number"}>{item.statNumber}</span>
+                        <span className='clubStatLabel' key={item.id+"Label"}>{item.statLabel}</span>
+                    </div>
+                    ))}
+                </div>
+                <div className='heroSectionContent'>
+                    <h1 className='heroSectionTitle'>The Space<br/>That Moves You</h1>
+                    <h2 className='heroSectionSubtitle'>Premium padel & gym club built for motion, balance, and flow. </h2>
+                    <button className='heroSectionBtn ClubBtn'>Join the Club</button>
+                    <button className='heroSectionBtn BookBtn'>Book A Court  
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 8L22 12L18 16" stroke="#FFFBF5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12H22" stroke="#FFFBF5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-          </div>
-
-          <dl className="hero__stats">
-            {facilityStats.map(({ value, label }) => (
-              <div className="hero-chip" key={label}>
-                <dt className="hero-chip__value">{value}</dt>
-                <dd className="hero-chip__label">{label}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
 export default HeroSection;
