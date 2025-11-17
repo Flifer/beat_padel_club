@@ -308,9 +308,27 @@ export default function Header() {
                 ))}
               </div>
               <div className="sidebar-languages">
-                  <button type="button" onClick={() => changeLanguage("en")}>English</button>
-                  <button type="button" onClick={() => changeLanguage("ua")}>Українська</button>
-                  <button type="button" onClick={() => changeLanguage("ru")}>Русский</button>
+                  <button
+                    type="button"
+                    className={i18n.language === "en" ? "active-lang" : ""}
+                    onClick={() => changeLanguage("en")}
+                  >
+                    English
+                  </button>
+                  <button
+                    type="button"
+                    className={i18n.language === "ua" ? "active-lang" : ""}
+                    onClick={() => changeLanguage("ua")}
+                  >
+                    Українська
+                  </button>
+                  <button
+                    type="button"
+                    className={i18n.language === "ru" ? "active-lang" : ""}
+                    onClick={() => changeLanguage("ru")}
+                  >
+                    Русский
+                  </button>
               </div>
             </div>
           </div>

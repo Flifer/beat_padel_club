@@ -397,8 +397,7 @@ body.body-locked {
   cursor: pointer;
   padding: 4px 0;
 }
-
-.sidebar-languages button:first-child {
+.sidebar-languages button.active-lang {
   text-decoration: underline;
 }
 
