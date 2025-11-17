@@ -1,5 +1,82 @@
 {
-    "dayPassSection": {
-      "title": "Лімітований доступ до Beat"
+  "header": {
+    "nav": {
+      "padel": "Падел",
+      "gym": "Тренажерний зал",
+      "cafe": "Кафе",
+      "shop": "Магазин",
+      "membership": "Членство",
+      "padelSubmenu": {
+        "courtsSchedule": "Розклад кортів",
+        "courtsScheduleDesc": "Забронюйте корт",
+        "padelWarmup": "Розминка Падел",
+        "padelWarmupDesc": "Розімніться з фокусом",
+        "padelRecovery": "Відновлення Падел",
+        "padelRecoveryDesc": "Відновіться та освіжіться",
+        "padelTrainings": "Тренування Падел",
+        "padelTrainingsDesc": "Тренуйтеся з наміром",
+        "padelKids": "Падел для дітей",
+        "padelKidsDesc": "Грай. Рости. Повторюй."
+      },
+      "gymSubmenu": {
+        "trainingsSchedule": "Розклад тренувань",
+        "trainingsScheduleDesc": "Заплануйте наступну сесію",
+        "gymRecovery": "Відновлення в залі",
+        "gymRecoveryDesc": "Перезарядіться та відновіться"
+      }
+    },
+    "login": "Увійти",
+    "back": "Назад",
+    "ariaLabels": {
+      "openMenu": "Відкрити меню",
+      "closeMenu": "Закрити меню",
+      "logo": "Beat Padel Club"
+    },
+    "contact": {
+      "email": "info@beat.com",
+      "phone": "+380 090 909 090",
+      "address": "вул. Дерибасівська, Одеса, Україна"
+    },
+    "languages": {
+      "en": "English",
+      "ua": "Українська",
+      "ru": "Русский"
     }
+  },
+  "heroSection": {
+    "stats": {
+      "open": "Відкрито",
+      "zones": "Зони",
+      "classesMonthly": "Занять на місяць",
+      "activeMembers": "Активних учасників"
+    },
+    "title": "Простір<br/>Який Рухає Вами",
+    "subtitle": "Преміальний клуб падел та тренажерного залу, створений для руху, балансу та потоку.",
+    "joinClub": "Приєднатися до клубу",
+    "bookCourt": "Забронювати корт"
+  },
+  "dayPassSection": {
+    "title": "Лімітований доступ до Beat",
+    "beatPass": "Beat Pass",
+    "card1": {
+      "title": "",
+      "description": "",
+      "button": ""
+    },
+    "card2": {
+      "title": "",
+      "features": {
+        "item1": "",
+        "item2": "",
+        "item3": "",
+        "item4": ""
+      }
+    }
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
   }
+}

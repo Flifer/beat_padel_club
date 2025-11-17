@@ -1,5 +1,82 @@
 {
+  "header": {
+    "nav": {
+      "padel": "Padel",
+      "gym": "Gym",
+      "cafe": "Café",
+      "shop": "Shop",
+      "membership": "Membership",
+      "padelSubmenu": {
+        "courtsSchedule": "Courts Schedule",
+        "courtsScheduleDesc": "Reserve your court",
+        "padelWarmup": "Padel Warmup",
+        "padelWarmupDesc": "Warm up with focus",
+        "padelRecovery": "Padel Recovery",
+        "padelRecoveryDesc": "Recover & refresh",
+        "padelTrainings": "Padel Trainings",
+        "padelTrainingsDesc": "Train with intent",
+        "padelKids": "Padel Kids",
+        "padelKidsDesc": "Play. Grow. Repeat."
+      },
+      "gymSubmenu": {
+        "trainingsSchedule": "Trainings Schedule",
+        "trainingsScheduleDesc": "Plan your next session",
+        "gymRecovery": "Gym Recovery",
+        "gymRecoveryDesc": "Recharge & restore"
+      }
+    },
+    "login": "Log in",
+    "back": "Back",
+    "ariaLabels": {
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "logo": "Beat Padel Club"
+    },
+    "contact": {
+      "email": "info@beat.com",
+      "phone": "+380 090 909 090",
+      "address": "Deribasivska str., Odessa, Ukraine"
+    },
+    "languages": {
+      "en": "English",
+      "ua": "Українська",
+      "ru": "Русский"
+    }
+  },
+  "heroSection": {
+    "stats": {
+      "open": "Open",
+      "zones": "Zones",
+      "classesMonthly": "Classes monthly",
+      "activeMembers": "Active members"
+    },
+    "title": "The Space<br/>That Moves You",
+    "subtitle": "Premium padel & gym club built for motion, balance, and flow.",
+    "joinClub": "Join the Club",
+    "bookCourt": "Book A Court"
+  },
   "dayPassSection": {
-    "title": "Limited Beat Access"
+    "title": "Limited Beat Access",
+    "beatPass": "Beat Pass",
+    "card1": {
+      "title": "",
+      "description": "",
+      "button": ""
+    },
+    "card2": {
+      "title": "",
+      "features": {
+        "item1": "",
+        "item2": "",
+        "item3": "",
+        "item4": ""
+      }
+    }
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
   }
 }

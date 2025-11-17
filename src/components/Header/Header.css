@@ -71,6 +71,8 @@ body.body-locked {
   color: #fffbf5;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 47%;
+  max-width: 47%;
 }
 
 .desktop-submenu-card:hover,
@@ -152,7 +154,7 @@ body.body-locked {
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 891px) {
   .desktop-nav-wrapper {
     display: flex;
     align-items: center;
@@ -434,7 +436,7 @@ body.body-locked {
   animation: fadeOut 0.3s ease-in forwards;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1190px) {
   .desktop-nav {
     display: flex;
     gap: 25px;
@@ -449,5 +451,11 @@ body.body-locked {
     left: 50%;
     width: min(1070px, calc(100vw - 64px));
     z-index: 55;
+  }
+}
+
+@media (max-width: 1220px) {
+  .desktop-submenu-card {
+    min-width: 80%;
   }
 }

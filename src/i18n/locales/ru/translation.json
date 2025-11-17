@@ -1,5 +1,82 @@
 {
-    "dayPassSection": {
-      "title": "Лимитированый доступ в Beat"
+  "header": {
+    "nav": {
+      "padel": "Падел",
+      "gym": "Тренажерный зал",
+      "cafe": "Кафе",
+      "shop": "Магазин",
+      "membership": "Членство",
+      "padelSubmenu": {
+        "courtsSchedule": "Расписание кортов",
+        "courtsScheduleDesc": "Забронируйте корт",
+        "padelWarmup": "Разминка Падел",
+        "padelWarmupDesc": "Разомнитесь с фокусом",
+        "padelRecovery": "Восстановление Падел",
+        "padelRecoveryDesc": "Восстановитесь и освежитесь",
+        "padelTrainings": "Тренировки Падел",
+        "padelTrainingsDesc": "Тренируйтесь с намерением",
+        "padelKids": "Падел для детей",
+        "padelKidsDesc": "Играй. Расти. Повторяй."
+      },
+      "gymSubmenu": {
+        "trainingsSchedule": "Расписание тренировок",
+        "trainingsScheduleDesc": "Запланируйте следующую сессию",
+        "gymRecovery": "Восстановление в зале",
+        "gymRecoveryDesc": "Перезарядитесь и восстановитесь"
+      }
+    },
+    "login": "Войти",
+    "back": "Назад",
+    "ariaLabels": {
+      "openMenu": "Открыть меню",
+      "closeMenu": "Закрыть меню",
+      "logo": "Beat Padel Club"
+    },
+    "contact": {
+      "email": "info@beat.com",
+      "phone": "+380 090 909 090",
+      "address": "ул. Дерибасовская, Одесса, Украина"
+    },
+    "languages": {
+      "en": "English",
+      "ua": "Українська",
+      "ru": "Русский"
     }
+  },
+  "heroSection": {
+    "stats": {
+      "open": "Открыто",
+      "zones": "Зоны",
+      "classesMonthly": "Занятий в месяц",
+      "activeMembers": "Активных участников"
+    },
+    "title": "Пространство<br/>Которое Движет Вами",
+    "subtitle": "Премиальный клуб падел и тренажерного зала, созданный для движения, баланса и потока.",
+    "joinClub": "Присоединиться к клубу",
+    "bookCourt": "Забронировать корт"
+  },
+  "dayPassSection": {
+    "title": "Лимитированный доступ в Beat",
+    "beatPass": "Beat Pass",
+    "card1": {
+      "title": "",
+      "description": "",
+      "button": ""
+    },
+    "card2": {
+      "title": "",
+      "features": {
+        "item1": "",
+        "item2": "",
+        "item3": "",
+        "item4": ""
+      }
+    }
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
   }
+}
