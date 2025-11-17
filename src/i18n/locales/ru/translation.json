@@ -43,6 +43,14 @@
       "ru": "Русский"
     }
   },
+
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
+  },
+
   "heroSection": {
     "stats": {
       "open": "Открыто",
@@ -55,28 +63,22 @@
     "joinClub": "Присоединиться к клубу",
     "bookCourt": "Забронировать корт"
   },
+
   "dayPassSection": {
     "title": "Лимитированный доступ в Beat",
-    "beatPass": "Beat Pass",
     "card1": {
-      "title": "",
-      "description": "",
-      "button": ""
+      "title": "Попробуйте Beat на один день",
+      "description": "Откройте для себя ритм Beat Club — доступ к площадкам для падела, тренажерному залу и зоне барре на целый день. Тренеры не включены. Только движение, плавность и свобода.",
+      "button": "Получить дневной пропуск"
     },
     "card2": {
-      "title": "",
+      "title": "Дневной абонемент — 999 ₴",
       "features": {
-        "item1": "",
-        "item2": "",
-        "item3": "",
-        "item4": ""
+        "item1": "Падел-корты",
+        "item2": "Доступ в зал",
+        "item3": "Зоны пилатеса и барре",
+        "item4": "Нет персональных тренировок"
       }
     }
-  },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "youtube": "YouTube",
-    "tiktok": "TikTok"
   }
 }

@@ -43,6 +43,12 @@
       "ru": "Русский"
     }
   },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
+  },
   "heroSection": {
     "stats": {
       "open": "Open",
@@ -57,26 +63,19 @@
   },
   "dayPassSection": {
     "title": "Limited Beat Access",
-    "beatPass": "Beat Pass",
     "card1": {
-      "title": "",
-      "description": "",
-      "button": ""
+      "title": "Try the Beat for a Day",
+      "description": "Discover the rhythm of Beat Club — access to padel, gym, and barre zones for a full day. No trainers included. Just movement, flow, and freedom.",
+      "button": "Get Day Pass"
     },
     "card2": {
-      "title": "",
+      "title": "Day Pass — 999 ₴",
       "features": {
-        "item1": "",
-        "item2": "",
-        "item3": "",
-        "item4": ""
+        "item1": "Padel courts",
+        "item2": "Gym access",
+        "item3": "Pilates & Barre zones",
+        "item4": "No personal training"
       }
     }
-  },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "youtube": "YouTube",
-    "tiktok": "TikTok"
   }
 }

@@ -43,6 +43,14 @@
       "ru": "Русский"
     }
   },
+
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "tiktok": "TikTok"
+  },
+
   "heroSection": {
     "stats": {
       "open": "Відкрито",
@@ -57,26 +65,19 @@
   },
   "dayPassSection": {
     "title": "Лімітований доступ до Beat",
-    "beatPass": "Beat Pass",
     "card1": {
-      "title": "",
-      "description": "",
-      "button": ""
+      "title": "Спробуйте Beat на день",
+      "description": "Відкрийте для себе ритм Beat Club — доступ до зон паделю, тренажерного залу та зон барре на цілий день. Без кросівок. Тільки рух, плавність та свобода.",
+      "button": "Отримайте денний квиток"
     },
     "card2": {
-      "title": "",
+      "title": "Дневной абонемент — 999 ₴",
       "features": {
-        "item1": "",
-        "item2": "",
-        "item3": "",
-        "item4": ""
+        "item1": "Падел-корти",
+        "item2": "Доступ до залу",
+        "item3": "Зони пілатеса і барре",
+        "item4": "Нет персональних тренировок"
       }
     }
-  },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "youtube": "YouTube",
-    "tiktok": "TikTok"
   }
 }
