@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next";
 import './Header.css';
+
 
 import courtScheduleImg from '../../assets/Header_assets/courtSheduleMenuIMG.jpg';
 import padelWarmupImg from '../../assets/Header_assets/padelWarmupMenuIMG.png';
@@ -123,8 +125,6 @@ const socialLinks = [
   },
 ];
 
-const languages = ['English', 'Українська', 'Російська'];
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
@@ -173,6 +173,11 @@ export default function Header() {
     closeMenu();
   };
 
+  const { i18n } = useTranslation();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <>
       <header className="header">
@@ -302,13 +307,10 @@ export default function Header() {
                   </a>
                 ))}
               </div>
-
               <div className="sidebar-languages">
-                {languages.map((language) => (
-                  <button key={language} type="button">
-                    {language}
-                  </button>
-                ))}
+                  <button type="button" onClick={() => changeLanguage("en")}>English</button>
+                  <button type="button" onClick={() => changeLanguage("ua")}>Українська</button>
+                  <button type="button" onClick={() => changeLanguage("ru")}>Русский</button>
               </div>
             </div>
           </div>
