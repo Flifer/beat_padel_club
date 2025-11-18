@@ -77,5 +77,27 @@
         "item4": "No personal training"
       }
     }
+  },
+  "communitySection": {
+    "title": "Beat Creates The Energy And Space To Move — Freely, Consciously, Together.",
+    "description": "No pressure, no noise – just thoughtful design, expert coaching, and a rhythm that helps you stay consistent and inspired.",
+    "stats": {
+      "rating": {
+        "value": "4.9",
+        "label": "Member rating across all reviews"
+      },
+      "areas": {
+        "value": "5+",
+        "label": "Areas: padel, gym, recovery, café, store"
+      },
+      "sessions": {
+        "value": "20+",
+        "label": "Weekly sessions & programs"
+      },
+      "hours": {
+        "value": "10K+",
+        "label": "Total hours of training & events logged"
+      }
+    }
   }
 }
