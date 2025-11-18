@@ -101,5 +101,27 @@
         "label": "Всього годин тренувань та заходів"
       }
     }
+  },
+  "servicesSection": {
+    "padel": {
+      "title": "Падел",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Забронювати"
+    },
+    "gym": {
+      "title": "Тренажерний зал",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Забронювати"
+    },
+    "cafe": {
+      "title": "Кафе",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Забронювати"
+    },
+    "shop": {
+      "title": "Магазин",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Забронювати"
+    }
   }
 }

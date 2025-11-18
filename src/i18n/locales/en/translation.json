@@ -99,5 +99,27 @@
         "label": "Total hours of training & events logged"
       }
     }
+  },
+  "servicesSection": {
+    "padel": {
+      "title": "Padel",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Book Now"
+    },
+    "gym": {
+      "title": "Gym",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Book Now"
+    },
+    "cafe": {
+      "title": "Cafe",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Book Now"
+    },
+    "shop": {
+      "title": "Shop",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
+      "button": "Book Now"
+    }
   }
 }
