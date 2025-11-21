@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection/HeroSection.jsx'
 import DayPassSection from './components/DayPassSection/DayPassSection.jsx'
 import CommunitySection from './components/CommunitySection/CommunitySection.jsx'
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx'
+import AboutSection from './components/AboutSection/AboutSection.jsx'
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <DayPassSection />
       <CommunitySection />
       <ServicesSection />
+      <AboutSection />
     </>
   );
 }

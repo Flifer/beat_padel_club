@@ -121,5 +121,12 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed.",
       "button": "Book Now"
     }
+  },
+  "aboutSection": {
+    "subtitle": "ABOUT BEAT CLUB",
+    "title": "DESIGNED FOR BODY AND MIND",
+    "paragraph1": "At Beat, everything is built around rhythm – your inner pace and physical balance.",
+    "paragraph2": "The gym is designed to inspire focus and strength through clean architecture, natural light, and a minimal environment that keeps your attention on movement.",
+    "paragraph3": "After training, the Beat Bar invites you to slow down. Signature drinks, curated playlists, and warm design elements help you recharge and connect – with yourself, your team, or just the moment."
   }
 }
