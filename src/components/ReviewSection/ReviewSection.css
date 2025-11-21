@@ -1,0 +1,154 @@
+.review-section {
+    color: #FFFBF5;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.review-section h3{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.review-section h2{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.review-section-content {
+    background-image: url('../../assets/ReviewSection_assets/background.jpg');
+    background-size: cover;
+    /* background-position-y: 59%; */
+    background-position: center -1200px;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+}
+
+.review-section-content-item {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    align-self: stretch;
+    justify-content: space-between;
+}
+
+.review-section-content-item::after{
+    content:"";
+    position:absolute; inset:0;
+    border-radius:inherit;
+    box-shadow: inset 0 0 0 0.5px rgba(255,255,255,.35);
+    pointer-events:none;
+}
+
+.review-section-content-item-paragraph {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+}
+
+.review-section-content-item-author {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.review-section-content-item-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.author1{
+    background-image: url('../../assets/ReviewSection_assets/Ellipse1.png');
+}
+.author2{
+    background-image: url('../../assets/ReviewSection_assets/Ellipse2.png');
+}
+.author3{
+    background-image: url('../../assets/ReviewSection_assets/Ellipse3.png');
+}
+
+.review-section-content-item-name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.review-section-content-item-position {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media (max-width: 1290px) {
+    .review-section {
+        padding: 100px 10px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .review-section-content {
+        flex-direction: column;
+        background-position: center;
+    }
+}
+
+@media (max-width: 750px) {
+    .review-section h3{
+        font-size: 12px;
+    }
+    
+    .review-section h2{
+        font-size: 32px;
+    }
+
+    .review-section-content-item {
+        padding: 30px;
+        gap: 16px;
+    }
+
+    .review-section-content {
+        padding: 30px;
+    }
+
+    .review-section-content-item-paragraph {
+        font-size: 15px;
+        line-height: 150%; /* 27px */
+    }
+
+    .review-section-content-item-name {
+        font-size: 15px;
+        line-height: 150%;
+    }
+    
+    .review-section-content-item-position {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}

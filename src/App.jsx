@@ -4,6 +4,7 @@ import DayPassSection from './components/DayPassSection/DayPassSection.jsx'
 import CommunitySection from './components/CommunitySection/CommunitySection.jsx'
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx'
 import AboutSection from './components/AboutSection/AboutSection.jsx'
+import ReviewSection from './components/ReviewSection/ReviewSection.jsx'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <CommunitySection />
       <ServicesSection />
       <AboutSection />
+      <ReviewSection />
     </>
   );
 }
