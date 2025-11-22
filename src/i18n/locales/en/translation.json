@@ -147,5 +147,19 @@
       "name": "Emma Williams",
       "position": "Regular Visitor"
     }
+  },
+  "membershipSection": {
+    "title": "JOIN THE COMMUNITY",
+    "button": "See Membership Plan",
+    "card1": {
+      "subtitle": "PERSONAL ACCESS",
+      "title": "Beat Family Member",
+      "button": "Discover More"
+    },
+    "card2": {
+      "subtitle": "CORPORATE ACCESS",
+      "title": "Corporate Card",
+      "button": "Discover More"
+    }
   }
 }

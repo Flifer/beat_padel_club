@@ -5,6 +5,7 @@ import CommunitySection from './components/CommunitySection/CommunitySection.jsx
 import ServicesSection from './components/ServicesSection/ServicesSection.jsx'
 import AboutSection from './components/AboutSection/AboutSection.jsx'
 import ReviewSection from './components/ReviewSection/ReviewSection.jsx'
+import MembershipSection from './components/MembershipSection/MembershipSection.jsx'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <ServicesSection />
       <AboutSection />
       <ReviewSection />
+      <MembershipSection />
     </>
   );
 }
