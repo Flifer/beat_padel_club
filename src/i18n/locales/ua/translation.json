@@ -167,5 +167,17 @@
   "sliderSection": {
     "title": "Більше, ніж клуб. Це ритм.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed."
+  },
+  "actionCardSection": {
+    "card1": {
+      "title": "Грай. Змагайся. Спілкуйся.",
+      "description": "Швидкі ралі, відкриті корти, хороша енергія. Забронюйте гру або приєднуйтесь до наших падел-подій.",
+      "button": "Забронювати корт"
+    },
+    "card2": {
+      "title": "Тренуйся. Відновлюйся. Повторюй.",
+      "description": "Від високоінтенсивних HIIT до спокійного відновлення. Виберіть свій потік та залишайтеся послідовними.",
+      "button": "Знайти заняття"
+    }
   }
 }

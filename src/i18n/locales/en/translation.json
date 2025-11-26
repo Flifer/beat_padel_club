@@ -163,7 +163,19 @@
     }
   },
   "sliderSection": {
-    "title": "More than a club. It’s a rhythm.",
+    "title": "More than a club. It's a rhythm.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed."
+  },
+  "actionCardSection": {
+    "card1": {
+      "title": "Play. Compete. Connect.",
+      "description": "Fast rallies, open courts, good energy. Book a game – or join our padel events.",
+      "button": "Book A Court"
+    },
+    "card2": {
+      "title": "Train. Recover. Repeat.",
+      "description": "From high-energy HIIT to calm recovery. Choose your flow and stay consistent.",
+      "button": "Find Your Class"
+    }
   }
 }
