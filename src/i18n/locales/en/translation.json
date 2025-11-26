@@ -161,5 +161,9 @@
       "title": "Corporate Card",
       "button": "Discover More"
     }
+  },
+  "sliderSection": {
+    "title": "More than a club. It’s a rhythm.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed."
   }
 }

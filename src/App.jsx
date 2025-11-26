@@ -6,6 +6,7 @@ import ServicesSection from './components/ServicesSection/ServicesSection.jsx'
 import AboutSection from './components/AboutSection/AboutSection.jsx'
 import ReviewSection from './components/ReviewSection/ReviewSection.jsx'
 import MembershipSection from './components/MembershipSection/MembershipSection.jsx'
+import SliderSection from './components/SliderSection/SliderSection.jsx'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <AboutSection />
       <ReviewSection />
       <MembershipSection />
+      <SliderSection />
     </>
   );
 }

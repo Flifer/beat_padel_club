@@ -163,5 +163,9 @@
       "title": "Корпоративна картка",
       "button": "Дізнатися більше"
     }
+  },
+  "sliderSection": {
+    "title": "Більше, ніж клуб. Це ритм.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed."
   }
 }

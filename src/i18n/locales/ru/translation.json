@@ -164,5 +164,9 @@
       "title": "Корпоративная карта",
       "button": "Узнать больше"
     }
+  },
+  "sliderSection": {
+    "title": "Более чем клуб. Это ритм.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum aenean placerat leo, in facilisis justo imperdiet sed."
   }
 }
