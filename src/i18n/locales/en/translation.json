@@ -177,5 +177,12 @@
       "description": "From high-energy HIIT to calm recovery. Choose your flow and stay consistent.",
       "button": "Find Your Class"
     }
+  },
+  "followUsSection": {
+    "content": {
+      "subtitle": "Follow Us",
+      "title": "Stay in the Beat with",
+      "titleSpan": "@beatclub"
+    }
   }
 }
