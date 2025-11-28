@@ -187,5 +187,41 @@
       "title": "Будь в ритме с",
       "titleSpan": "@beatclub"
     }
+  },
+  "footer": {
+    "getInTouch": {
+      "title": "Свяжитесь с нами",
+      "phone": "+380909090909",
+      "email": "info@beat.club",
+      "location": "Одесса, Украина"
+    },
+    "services": {
+      "title": "Услуги",
+      "padel": "Падел",
+      "gym": "Тренажерный зал",
+      "cafe": "Кафе",
+      "shop": "Магазин"
+    },
+    "club": {
+      "title": "Клуб",
+      "about": "О Beat Club",
+      "membership": "Членство",
+      "events": "События"
+    },
+    "helpInfo": {
+      "title": "Помощь и информация",
+      "contact": "Свяжитесь с нами",
+      "refund": "Политика возврата",
+      "partnerships": "Партнерства",
+      "careers": "Карьера"
+    },
+    "joinTheBeat": {
+      "title": "Присоединяйся к Beat",
+      "description": "Ранний доступ к событиям и новостям",
+      "emailPlaceholder": "Введите ваш email"
+    },
+    "copyright": "© Beat Club 2025 — Играй. Тренируйся. Общайся.",
+    "privacyPolicy": "Политика конфиденциальности",
+    "termsOfService": "Условия использования"
   }
 }

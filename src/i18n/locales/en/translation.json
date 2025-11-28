@@ -184,5 +184,41 @@
       "title": "Stay in the Beat with",
       "titleSpan": "@beatclub"
     }
+  },
+  "footer": {
+    "getInTouch": {
+      "title": "Get in touch",
+      "phone": "+380909090909",
+      "email": "info@beat.club",
+      "location": "Odessa, Ukraine"
+    },
+    "services": {
+      "title": "Services",
+      "padel": "Padel",
+      "gym": "Gym",
+      "cafe": "Café",
+      "shop": "Shop"
+    },
+    "club": {
+      "title": "Club",
+      "about": "About Beat Club",
+      "membership": "Membership",
+      "events": "Events"
+    },
+    "helpInfo": {
+      "title": "Help & Info",
+      "contact": "Contact us",
+      "refund": "Refund Policy",
+      "partnerships": "Partnerships",
+      "careers": "Careers"
+    },
+    "joinTheBeat": {
+      "title": "Join the Beat",
+      "description": "Early access to events & news",
+      "emailPlaceholder": "Enter your email"
+    },
+    "copyright": "© Beat Club 2025 — Play. Train. Connect.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   }
 }

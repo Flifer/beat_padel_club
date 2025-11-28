@@ -9,6 +9,7 @@ import MembershipSection from './components/MembershipSection/MembershipSection.
 import SliderSection from './components/SliderSection/SliderSection.jsx'
 import ActionCardSection from './components/ActionCardSection/ActionCardSection.jsx'
 import FollowUsSection from './components/FollowUsSection/FollowUsSection.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <SliderSection />
       <ActionCardSection />
       <FollowUsSection />
+      <Footer />
     </>
   );
 }
